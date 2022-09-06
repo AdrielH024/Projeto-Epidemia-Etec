@@ -3,10 +3,10 @@ import java.util.Scanner;
 
 public class AdrielHenriqueSouza_Ag4_DSI {
 /*
- * nome da região
- * número de casos da região
- * mostrar informações
- * nome da região e número de dados
+ * nome da regiÃ£o
+ * nÃºmero de casos da regiÃ£o
+ * mostrar informaÃ§Ãµes
+ * nome da regiÃ£o e nÃºmero de dados
  * */
 
 	public static int [] numdecasos = new int[27];
@@ -23,15 +23,15 @@ public class AdrielHenriqueSouza_Ag4_DSI {
 		while(i <= numdeestados) {
 			//garantir que todos os estados foram passados
 			System.out.println("escreva nome do estado");
-			String teste = myObj.nextLine();
-			nomederegiao[i] = teste;
-			System.out.println("escreva o número de casos de " + nomederegiao[i]);
-			teste = myObj.nextLine();
-			numdecasos[i] = Integer.parseInt(teste);
+			String scan = myObj.nextLine();
+			nomederegiao[i] = scan;
+			System.out.println("escreva o nÃºmero de casos de " + nomederegiao[i]);
+			scan = myObj.nextLine();
+			numdecasos[i] = Integer.parseInt(scan);
 			verificoutodas = false;
 			
 			while(foipassado == false && i != 0 && i < numdeestados) {
-				//comparar para ver se não temos estados repetidos
+				//comparar para ver se nÃ£o temos estados repetidos
 				if(verificoutodas == true) {
 					break;
 				}
@@ -47,11 +47,11 @@ public class AdrielHenriqueSouza_Ag4_DSI {
 					}else{
 						System.out.println("invalido, estado repetido");
 						System.out.println("escreva nome do estado");
-						teste = myObj.nextLine();
-						nomederegiao[i] = teste;
-						System.out.println("escreva o número de casos de " + nomederegiao[i]);
-						teste = myObj.nextLine();
-						numdecasos[i] = Integer.parseInt(teste);
+						scan = myObj.nextLine();
+						nomederegiao[i] = scan;
+						System.out.println("escreva o nÃºmero de casos de " + nomederegiao[i]);
+						scan = myObj.nextLine();
+						numdecasos[i] = Integer.parseInt(scan);
 						j=-1;
 					}
 
